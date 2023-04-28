@@ -1,7 +1,16 @@
 import React from "react";
-import Header from ".Header";
-import Main from "./Main";
-import Footer from ".Footer";
+
+const Header = () => {
+  return <>{/* Start Coding Here */}</>;
+};
+
+const Main = () => {
+  return <>{/* Start Coding Here */}</>;
+};
+
+const Footer = () => {
+  return <>{/* Start Coding Here */}</>;
+};
 
 const Exercise2 = () => {
   return (
@@ -31,3 +40,4 @@ const Exercise2 = () => {
 };
 
 export default Exercise2;
+export { Header, Main, Footer };
