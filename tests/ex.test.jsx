@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import Exercise1, { Link } from "./components/Exercise1";
-import Exercise2, { Header, Main, Footer } from "./components/Exercise2";
+import Exercise1, { Link } from "../src/components/Exercise1";
+import Exercise2, { Header, Main, Footer } from "../src/components/Exercise2";
 import { expect } from "vitest";
 
 describe("Component Reusability : Exercise 1-2", () => {
@@ -11,14 +11,12 @@ describe("Component Reusability : Exercise 1-2", () => {
       expect(link).toHaveAttribute("href", "https://www.techupth.com");
       expect(link).toHaveTextContent("techupth.com");
     });
-    screen.debug();
   });
 
   it("นำ Component Link มาใช้แทน <a> ที่ซ้ำซ้อนกันอยู่ทั้ง 3 ที่บนหน้าเว็บไซต์", () => {
     render(<Exercise1 />);
     const renderedLinks = screen.getAllByText("techupth.com");
     expect(renderedLinks).toHaveLength(3);
-    screen.debug();
   });
 
   it("ยังไม่ได้สร้าง Component Header ที่ Return HTML Element ตามที่โจทย์กำหนด ", () => {
@@ -29,7 +27,6 @@ describe("Component Reusability : Exercise 1-2", () => {
     );
     expect(h1Role.length).toBe(1);
     expect(pRole.length).toBe(1);
-    screen.debug();
   });
 
   it("ยังไม่ได้สร้าง Component Main ที่ Return HTML Element ตามที่โจทย์กำหนด ", () => {
@@ -38,7 +35,6 @@ describe("Component Reusability : Exercise 1-2", () => {
     const buttonRole = screen.getAllByRole("button");
     expect(h1Role.length).toBe(1);
     expect(buttonRole.length).toBe(1);
-    screen.debug();
   });
 
   it("ยังไม่ได้สร้าง Component Footer ที่ Return HTML Element ตามที่โจทย์กำหนด ", () => {
@@ -51,7 +47,6 @@ describe("Component Reusability : Exercise 1-2", () => {
       expect(link).toHaveAttribute("href", "https://www.techupth.com");
       expect(link).toHaveTextContent("techupth.com");
     });
-    screen.debug();
   });
 
   it("ยังไม่ได้นำ Component Header , Main และ Footer ไปใช้แทนโค้ดแต่ละที่แยกออกมาเป็น Component ", () => {
@@ -63,7 +58,5 @@ describe("Component Reusability : Exercise 1-2", () => {
     expect(header).not.toBeNull();
     expect(main).not.toBeNull();
     expect(footer).not.toBeNull();
-
-    screen.debug();
   });
 });
