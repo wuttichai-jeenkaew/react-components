@@ -77,6 +77,10 @@ main {
   text-align: left;
 }
 
+.company-detail-right h2 {
+  margin-bottom: 20px;
+}
+
 .hero-right h2 {
   margin-bottom: 20px;
 }
@@ -146,7 +150,6 @@ main {
 }
 
 .add-to-cart-button {
-  margin-top: 0.5rem;
   border: 1px solid #3b82f6;
   color: #3b82f6;
   background-color: transparent;
@@ -160,6 +163,23 @@ main {
 
 .add-to-cart-button:hover {
   background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.add-to-cart-button-secondary {
+  border: 1px solid #f63be0;
+  color: #f63be0;
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-to-cart-button-secondary:hover {
+  background-color: #f562df;
   color: #ffffff;
 }
 
