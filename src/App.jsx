@@ -9,8 +9,8 @@ function App() {
       */}
       <header>
         <nav>
-          <div class="logo">🚀 XYZ CORP</div>
-          <ul class="nav-list">
+          <div className="logo">🚀 XYZ CORP</div>
+          <ul className="nav-list">
             <li>
               <a href="#">Home</a>
             </li>
@@ -32,12 +32,12 @@ function App() {
         เพื่อแบ่งสัดส่วนของ HTML Element ในส่วนของ <main> 
       */}
       <main>
-        <div class="company-detail-left">
+        <div className="company-detail-left">
           <h1>Welcome to XYZ Corp</h1>
           <p>Your Trusted Partner in Excellence</p>
           <img src="https://placehold.co/300x300" />
         </div>
-        <div class="company-detail-right">
+        <div className="company-detail-right">
           <h2>About Our Company</h2>
           <p>
             Welcome to XYZ Corp, where excellence meets innovation. We are a
@@ -57,7 +57,7 @@ function App() {
             ready to collaborate with you to tackle your most complex challenges
             and drive your success.
           </p>
-          <button class="learn-button">Learn More</button>
+          <button className="learn-button">Learn More</button>
         </div>
       </main>
 
