@@ -83,7 +83,7 @@ function App() {
               {/*
                 Todo 6: หลังกจากทำ Todo 5 เสร็จ
                 ให้เปลี่ยน Style ของปุ่ม “Add to Card” แก้ไข className ใน Component `Button` ที่สร้างขึ้นมา
-                จาก “add-to-cart-button” เป็น “secondary-add-to-cart-button”
+                จาก “add-to-cart-button” เป็น “add-to-cart-button-secondary”
               */}
               <button className="add-to-cart-button">Add to Cart</button>
             </div>
